@@ -356,19 +356,65 @@ sup {
 <li>Is there a correlation between two related occurrences? Remember that correlation does not imply causation!</li>
 </ul>
 
-<h3 id="toc_8">Exercise 1: Unemployment &amp; income</h3>
+<h3 id="toc_8">Datasets</h3>
+
+<p>Datasets for these exercises, and to explore after the workshop, are in a shared Google Drive folder <a href="https://drive.google.com/open?id=12DtOhaQmCZuysdFB4-6gLjG4ifnEgot8mtdwfPGb3RA">here</a>. They are set to &quot;view only,&quot; so you&#39;ll need to make a copy of each either in your Google Drive or on your computer to be able to edit them.</p>
+
+<h3 id="toc_9">Exercise 1: Unemployment &amp; income</h3>
 
 <p>In this exercise, we&#39;ll look at unemployment rates over time, as well as measures of income over time.</p>
 
 <ol>
 <li>This graph of unemployment rates in the US over time has an unlabeled x-axis. See if you can identify the start of the Great Recession, and take note of the unemployment rate at that time.</li>
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~camille.seaberry/191.embed"></iframe>
+<li>Now look at this graph of unemployment rates over the same period by race and sex. This time, the x-axis is labelled. Compare the level of unemployment at which the recession was declared to historic unemployment trends for each demographic group.</li>
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~camille.seaberry/194.embed"></iframe>
+<li>Set up the same graphs in <a href="https://plot.ly">Plotly</a>, Google Sheets, or another program. The spreadsheet is <a href="https://docs.google.com/spreadsheets/d/12DtOhaQmCZuysdFB4-6gLjG4ifnEgot8mtdwfPGb3RA/edit?usp=sharing">here</a>.</li>
+<li>Calculus skills: think about the effect of a <em>change</em> in unemployment rates on a population. Is it a crisis to have consistently high unemployment, or a sudden jump in unemployment even if it doesn&#39;t get particularly high? Also think about the effects of the accumulation of unemployment--how might this relate to asset accumulation?</li>
+<li>Extra credit: figure out some means of measuring gaps in unemployment between demographic groups--try a ratio or a difference in percentage points.</li>
 </ol>
 
-<h3 id="toc_9">Exercise 2: Juvenile justice</h3>
+<p>Next, we&#39;ll look at income inequality. Generally when people talk about the wage gap in the US, they mean the ratio of women&#39;s average wages compared to men&#39;s. We can take a more nuanced look at this by both sex and race.</p>
 
-<h3 id="toc_10">Exercise 3: Police violence</h3>
+<ol>
+<li><a href="https://docs.google.com/spreadsheets/d/1wR2x6H873_elnbPqBxjW3BCFngHqOlQjkmzPtZxzGVE/edit?usp=sharing">Your spreadsheet</a> has one sheet of median weekly earnings by sex from 2005 to 2015. On average, how much did women earn compared to men for this time period? How did this ratio change over time?</li>
+<li>The second sheet has median weekly earnings over the same time by sex and race. What wage gaps can you find? For example, compare wages of each demographic to average men&#39;s wages. How do gaps change over time?</li>
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~camille.seaberry/197.embed"></iframe>
+</ol>
 
-<h2 id="toc_11">Explore some data on your own!</h2>
+<h3 id="toc_10">Exercise 2: Juvenile justice</h3>
+
+<p>In this exercise, we&#39;ll look at juvenile justice data.</p>
+
+<p>First, we&#39;ll look at youth incarceration rates by race by state. The spreadsheet is <a href="https://drive.google.com/open?id=185xkolIqRVjnQS4tUKD_v1AffpVnXwYO4TsNaB6dDwA">here</a>. (There&#39;s also a sheet in the shared folder of numbers, not rates, of incarcerated youth by race and state.) We have data for 2001 and 2013, the most recent year available from the federal government. Under the federal Juvenile Justice and Delinquency Prevention Act, states are required to make ongoing reforms to their juvenile justice systems, including keeping youth out of prison when possible; the federal government also gives other incentives for reducing youth prison populations. In particular, the JJDPA requires states to reduce racial disparities throughout their juvenile systems, and to report data.</p>
+
+<ol>
+<li>For each state, find the percent change in incarceration rate from 2001 to 2013. To do this, write a formula in your first cell, then copy it down.</li>
+<li>Sort these changes, either ascending or descending. Make a bar graph. You can also make a choropleth (color-scaled) map of percent changes. This is easy in Plotly, you&#39;ll just need to use <a href="https://drive.google.com/open?id=1LilbDf-B9daDsz0umVABqKZBROWOrIWS7nfjht7Rczc">this sheet</a> to copy over abbreviations for all the states.</li>
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~camille.seaberry/198.embed"></iframe>
+<li>Think about policy for a minute: what might have caused these changes in incarceration rates?</li>
+<li>Try at least one way to investigate racial disparities for each state. You might want to calculate ratios of rates (i.e. Black youth incarceration rate compared to white youth incarceration rate) for each state, or for the country as a whole. You might want to find percent changes by race from 2001 to 2013. Have reductions happened evenly across race, or have some groups lagged behind?</li>
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~camille.seaberry/200.embed"></iframe>
+<li>There&#39;s a much more detailed analysis states have to conduct on racial disparities and report to the federal government which we won&#39;t get into, but you can read about it, look at interactives on race disparities, and get access to data at the <a href="http://data.burnsinstitute.org/">Burns Institute</a>.</li>
+</ol>
+
+<h3 id="toc_11">Exercise 3: Police violence</h3>
+
+<p>In this exercise, we&#39;ll look at the data collected by the Guardian on police killings in the US. There&#39;s a lot to explore--numbers and rates by state, city, race; whether people were reportedly armed. <a href="http://www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database">The Guardian&#39;s site</a> has some interactive visualizations to look through, that are more detailed than what we&#39;ll be doing.</p>
+
+<ol>
+<li>What can you find on the site that might lead to a mass movement around police violence? How might this information be useful in social justice work?</li>
+<li>Download <a href="https://drive.google.com/open?id=1x5V_iuBmglXZNc1DxfHs-pxHZSO4bKWGoW5NvToOZX0">the spreadsheet</a> from the shared Google Drive folder onto your computer.</li>
+<li>We&#39;ll make a map of the cities where people have been killed by police in 2015. Register an account at <a href="https://cartodb.com">CartoDB</a>--if you have a Google account, you can just link it.</li>
+<li>Follow along with the first page of CartoDB&#39;s <a href="http://academy.cartodb.com/courses/beginners-course/making-your-first-map/">intro tutorial</a>. </li>
+<li>Skip to the <a href="http://academy.cartodb.com/courses/beginners-course/thematic-maps-with-point-data/">third page</a> of the tutorial.</li>
+<li>From the home page, click Datasets, then New Dataset. You&#39;ll upload your spreadsheet there.</li>
+<li>Click on the column labeled &quot;city,&quot; then select Geolocate. Select City Names; for the first question, choose &quot;city,&quot; and for the second, choose &quot;state.&quot; The app then finds the coordinates of each city, although a few will throw errors. Then choose Geolocate.</li>
+<li>Click Map view. On the right side, choose the paintbrush menu, where you&#39;ll explore different options for mapping this data. The cluster view shows points sized based on the number of events within some distance; this will change as you zoom out. The intensity view colors points based on how many overlap at a point, and the heatmap view is similar.</li>
+<iframe width="100%" height="520" frameborder="0" src="https://camilleseaberry.cartodb.com/viz/2ca199b0-ca27-11e5-a6cf-0e31c9be1b51/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+</ol>
+
+<h2 id="toc_12">Explore some data on your own!</h2>
 
 <ul>
 <li><a href="http://www.census.gov/censusexplorer/">Census Explorer</a>: Several applications from the Census Bureau to build maps of economic and social indicators by state, county, and census tract.</li>
@@ -380,7 +426,7 @@ sup {
 <li><a href="http://equality-of-opportunity.org/index.php/data">Equality of Opportunity Project</a> from Harvard: beware that there are a lot of datasets here, and you&#39;ll need to Read Me&#39;s for each one to understand what the variables are. See a write-up on the project <a href="http://fivethirtyeight.com/features/rich-kids-stay-rich-poor-kids-stay-poor/">here</a>.</li>
 </ul>
 
-<h2 id="toc_12">Last words of advice</h2>
+<h2 id="toc_13">Last words of advice</h2>
 
 <ol>
 <li><strong>Read</strong> a lot! When you read a news article about a study, find the researcher&#39;s documentation. This is more and more available as researchers put their work, methodology, and even their data online and openly available.</li>
@@ -389,9 +435,9 @@ sup {
 <li><strong>Never ever ever tell a young person any variation of &quot;I&#39;m just not a math person&quot;</strong> or &quot;I just don&#39;t do math&quot;--especially don&#39;t do this in front of young women or students of color, or other students that are underrepresented in math &amp; science. Think about the message that sends them, and imagine being allowed to say, &quot;I just don&#39;t read&quot; or &quot;I don&#39;t need to know about history.&quot;</li>
 </ol>
 
-<h2 id="toc_13">Resources</h2>
+<h2 id="toc_14">Resources</h2>
 
-<h3 id="toc_14">Data journalism</h3>
+<h3 id="toc_15">Data journalism</h3>
 
 <p>Reading good data journalism &amp; data blogging not only helps you find ideas for your students to work on, but it also helps solidify your understanding of how researchers work with data and how journalists explain data. Some blogs even make their datasets available open source.</p>
 
@@ -403,14 +449,14 @@ sup {
 <li><a href="http://www.storybench.org/">Storybench</a> from Northeastern University: lots of great, but technical, tutorials on making data visualizations and stories</li>
 </ul>
 
-<h3 id="toc_15">Tutorials</h3>
+<h3 id="toc_16">Tutorials</h3>
 
 <ul>
 <li><a href="http://ctb.ku.edu/en">Community Tool Box</a> for participatory action research from the University of Kansas</li>
 <li><a href="http://schoolofdata.org/courses/">Tutorials</a> from School of Data, an international group to build data literacy especially in non-Western countries</li>
 </ul>
 
-<h3 id="toc_16">Tools for working with data</h3>
+<h3 id="toc_17">Tools for working with data</h3>
 
 <ul>
 <li><a href="https://plot.ly">Plotly</a>: like a more robust Google Sheets; you can export interactive charts and embed them in a site, such as something you build with Google Sites</li>
@@ -419,7 +465,7 @@ sup {
 <li><a href="https://quartz.github.io/Chartbuilder/">Chartbuilder</a> from Quartz</li>
 </ul>
 
-<h3 id="toc_17">Learn to code!</h3>
+<h3 id="toc_18">Learn to code!</h3>
 
 <ul>
 <li><a href="https://scratch.mit.edu/">Scratch</a>: a drag-and-drop language developed at MIT to teach children to code (i.e. if grade schoolers can do it, you can do it)</li>
@@ -430,7 +476,7 @@ sup {
 <li><a href="https://www.r-project.org/">R</a>: this is an open source language for statistical programming and data analysis. It&#39;s notoriously hard to get into, but really cool once you do; try this <a href="https://www.codeschool.com/courses/try-r">free introduction course</a></li>
 </ul>
 
-<h3 id="toc_18">Organizations diversifying STEM</h3>
+<h3 id="toc_19">Organizations diversifying STEM</h3>
 
 <ul>
 <li><a href="http://www.blackgirlscode.com/">Black Girls Code</a></li>
