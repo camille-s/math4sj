@@ -1,1 +1,448 @@
-placeholder
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>math 4 sj</title>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+</head>
+<body>
+<h1 id="toc_0">Resource Guide: Math for Social Justice // City Math @ Common Ground, Feb. 3, 2016</h1>
+
+<h2 id="toc_1">Teaching math for social justice &amp; vice versa</h2>
+
+<h3 id="toc_2">How does math relate to social justice?</h3>
+
+<p>Even though it might not always be immediately clear, there are a few ways math can be crucial to social justice. </p>
+
+<p><strong>Thinking concretely</strong>, communities can use math, particularly data collection and analysis, to describe issues they are dealing with, to recognize disparities, and to find changes over time and space. This might include using data to debunk stereotypes, evaluate the strength or weakness of programs, or map assets or issues. Often, data can confirm an issue that people have experienced, but that isn&#39;t believed until there is statistical evidence.</p>
+
+<p><strong>Thinking abstractly</strong>, math is more than learning rules and computations--organizers&#39; work is enhanced by skills in logic, problem solving, identifying patterns, and other forms of critical thinking.</p>
+
+<h3 id="toc_3">How does social justice relate to math?</h3>
+
+<p>There are stark achievement/opportunity gaps in math and many related fields. In higher education, STEM fields often lack representation from women, people of color, first-generation students, and other marginalized groups. Likewise, low-income youth and youth of color are more likely to attend K-12 schools that don&#39;t offer computer literacy or computer science, advanced math and science classes, or other pathways to STEM fields. Many <a href="https://www.whitehouse.gov/blog/2016/01/30/computer-science-all">national initiatives</a> work to diversify these fields, but are still too few and far between. Meanwhile, <a href="http://www.teachhub.com/ed-tech-closing-digital-divide">gaps in technology skills</a> are <a href="http://www.slate.com/articles/technology/future_tense/2014/06/neuman_celano_library_study_educational_technology_worsens_achievement_gaps.single.html">widening</a>, and not necessarily solved by efforts like 1:1 classroom programs.</p>
+
+<h3 id="toc_4">Quick hits in the news</h3>
+
+<p>A few examples of overlaps between math &amp; social justice that are currently or recently in the news (Jan. 2016):</p>
+
+<ul>
+<li>Lead poisoning crisis in Flint, MI: One way that the extent of the water crisis was kept from the public was through testing of water samples that broke scientific protocol and in turn--either through intentional sabotage or gross negligence--got back <a href="http://fivethirtyeight.com/features/what-went-wrong-in-flint-water-crisis-michigan/">drastically skewed results</a>. See more on <a href="https://www.washingtonpost.com/news/wonk/wp/2016/01/15/this-is-how-toxic-flints-water-really-is/">water testing in Flint</a> and related <a href="https://www.washingtonpost.com/news/energy-environment/wp/2016/01/27/its-not-just-flint-poor-communities-across-the-country-live-with-extreme-polluters/">environmental justice studies</a>.</li>
+<li>Widening income inequality in cities &amp; metro areas since before the recession, via a <a href="http://www.brookings.edu/research/papers/2016/01/14-income-inequality-cities-update-berube-holmes">Brookings Institution study</a>. Spoiler: New Haven is #1 in the country in increased gaps between the 20th and 95th percentile incomes.</li>
+<li>Two studies that confirm Black conventional wisdom: Black drivers in <a href="http://www.ctdatahaven.org/blog/connecticut-data-reveal-racial-disparities-policing">Connecticut</a> are more likely to be pulled over and searched, while being less likely to have illegal contraband (also see <a href="http://www.nytimes.com/2015/10/25/us/racial-disparity-traffic-stops-driving-black.html">a NYT feature</a> that includes Connecticut data). And Black workers really do have to be twice as good to get half as much, as the saying goes, and those pitfalls accumulate to create <a href="http://www.theatlantic.com/business/archive/2015/10/why-black-workers-really-do-need-to-be-twice-as-good/409276/">wealth gaps</a>.</li>
+</ul>
+
+<h2 id="toc_5">Examples &amp; exercises</h2>
+
+<p>Even without a strong background in statistics, organizers can make use of data to understand some basic concepts in their work. Many of these concepts span multiple math classes.</p>
+
+<h3 id="toc_6">Meta questions:</h3>
+
+<p>Sometimes the most important question to ask about a data project is: <strong>Why is there no data?</strong> A very prominent example of this recently is the fact that no federal body in the US requires police departments to report use of force incidents, even when an officer has killed a civilian while on duty. In 2015, responding to the Black Lives Matter movement, both <a href="http://www.theguardian.com/us-news/series/counted-us-police-killings">The Guardian</a> and the <a href="https://www.washingtonpost.com/graphics/national/police-shootings/">Washington Post</a> launched databases where they crowdsourced and combed news reports of killings by police officers (there are also several similar projects run by <a href="http://killedbypolice.net/">individuals</a> and one by the <a href="http://www.policemisconduct.net/">Cato Institute</a>); by the end of the year, both the FBI and Dept. of Justice had to admit to their embarrassment at failing to collect any such data, and announced plans to <a href="http://www.theguardian.com/us-news/2015/oct/05/justice-department-trials-system-count-killings-us-law-enforcement-the-counted">build a similar database</a> starting in the next few months.</p>
+
+<p>Another example comes from organizing for transgender people&#39;s rights and safety. Similarly combing through news articles, advocates began counting homicides of trans people in the US and found <a href="https://broadly.vice.com/en_us/article/hes-not-done-killing-her-why-so-many-trans-women-were-murdered-in-2015">at least 23 trans women</a>, almost all women of color, who had been killed in 2015. Because there is no census or other government survey to document this, the trans community began documenting these alarming murders themselves.</p>
+
+<p>It is also important to ask who is collecting data, who has access to that data, and who has the skills to make them data literate. We often see researchers studying inner-city communities in order to publish their own research, but the benefits of their research may, at best, trickle down to the people actually being studied. A different model, <a href="http://ctb.ku.edu/en">participatory action research</a>, sees the importance of communities being empowered and developing skills, not just serving as research subjects, through open use of data.</p>
+
+<h3 id="toc_7">General questions to ask:</h3>
+
+<p>Once you have an issue in mind, investigate it with the 5 W&#39;s: who? what? when? where? why? and how?</p>
+
+<p>Here are some questions to start with, but there are infinitely more:</p>
+
+<ul>
+<li>Who does this affect? Who does this affect the <em>most</em>? How much more does this affect one group compared to others?</li>
+<li>How has this changed over time? How have <em>rates</em> changed over time? How does this accumulate? (Note that questions like this, with real world examples, can help introduce calculus concepts.)</li>
+<li>What is the context in which this happens? Political, social, economic, etc.</li>
+<li>Where does this happen? Where does this happen the <em>most</em>? What are the conditions where this happens most?</li>
+<li>Is there a correlation between two related occurrences? Remember that correlation does not imply causation!</li>
+</ul>
+
+<h3 id="toc_8">Exercise 1: Unemployment &amp; income</h3>
+
+<p>In this exercise, we&#39;ll look at unemployment rates over time, as well as measures of income over time.</p>
+
+<ol>
+<li>This graph of unemployment rates in the US over time has an unlabeled x-axis. See if you can identify the start of the Great Recession, and take note of the unemployment rate at that time.</li>
+</ol>
+
+<h3 id="toc_9">Exercise 2: Juvenile justice</h3>
+
+<h3 id="toc_10">Exercise 3: Police violence</h3>
+
+<h2 id="toc_11">Explore some data on your own!</h2>
+
+<ul>
+<li><a href="http://www.census.gov/censusexplorer/">Census Explorer</a>: Several applications from the Census Bureau to build maps of economic and social indicators by state, county, and census tract.</li>
+<li><a href="http://www.socialexplorer.com/">Social Explorer</a>: Similar to Census Explorer, except not all indicators are available for free. Some can zoom down to census block groups.</li>
+<li><a href="http://www.census.gov/did/www/saipe/data/interactive/">Small Area Income and Poverty Estimates</a>: Another interactive app from the Census that zooms in to smaller geographic areas. (2/2/2016 this was throwing a server error)</li>
+<li><a href="http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml">American Fact Finder</a> for the Census&#39;s American Community Survey: somewhat clunky tool for pulling detailed tables from the census. Allows you to export data matched with shapefiles for building maps.</li>
+<li><a href="http://datacenter.kidscount.org/">Kids Count Data Center</a> from the Annie E. Casey Foundation: lots of data available on issues affecting children; includes map and chart builders and can be broken down by state, county, city, congressional district, and school district.</li>
+<li><a href="http://trends.vera.org/">Incarceration Trends</a> maps from the Vera Institute of Justice</li>
+<li><a href="http://equality-of-opportunity.org/index.php/data">Equality of Opportunity Project</a> from Harvard: beware that there are a lot of datasets here, and you&#39;ll need to Read Me&#39;s for each one to understand what the variables are. See a write-up on the project <a href="http://fivethirtyeight.com/features/rich-kids-stay-rich-poor-kids-stay-poor/">here</a>.</li>
+</ul>
+
+<h2 id="toc_12">Last words of advice</h2>
+
+<ol>
+<li><strong>Read</strong> a lot! When you read a news article about a study, find the researcher&#39;s documentation. This is more and more available as researchers put their work, methodology, and even their data online and openly available.</li>
+<li>Ask a lot of <strong>questions</strong></li>
+<li><strong>Trust your students</strong>--something they&#39;re telling you about that you don&#39;t experience might still be true, and someday there might be data to back them up. See the racial profiling study above, which basically provides numerical evidence of what people of color have been saying for eons.</li>
+<li><strong>Never ever ever tell a young person any variation of &quot;I&#39;m just not a math person&quot;</strong> or &quot;I just don&#39;t do math&quot;--especially don&#39;t do this in front of young women or students of color, or other students that are underrepresented in math &amp; science. Think about the message that sends them, and imagine being allowed to say, &quot;I just don&#39;t read&quot; or &quot;I don&#39;t need to know about history.&quot;</li>
+</ol>
+
+<h2 id="toc_13">Resources</h2>
+
+<h3 id="toc_14">Data journalism</h3>
+
+<p>Reading good data journalism &amp; data blogging not only helps you find ideas for your students to work on, but it also helps solidify your understanding of how researchers work with data and how journalists explain data. Some blogs even make their datasets available open source.</p>
+
+<ul>
+<li><a href="http://www.fivethirtyeight.com">FiveThirtyEight</a>--also check out their <a href="https://github.com/fivethirtyeight/data">repository of datasets</a> on Github</li>
+<li><a href="http://www.nytimes.com/upshot/">The Upshot</a> data blog from the New York Times</li>
+<li><a href="https://www.washingtonpost.com/news/wonk/">Wonkblog</a> data blog from the Washington Post</li>
+<li><a href="http://www.citylab.com/">CityLab</a> from the Atlantic</li>
+<li><a href="http://www.storybench.org/">Storybench</a> from Northeastern University: lots of great, but technical, tutorials on making data visualizations and stories</li>
+</ul>
+
+<h3 id="toc_15">Tutorials</h3>
+
+<ul>
+<li><a href="http://ctb.ku.edu/en">Community Tool Box</a> for participatory action research from the University of Kansas</li>
+<li><a href="http://schoolofdata.org/courses/">Tutorials</a> from School of Data, an international group to build data literacy especially in non-Western countries</li>
+</ul>
+
+<h3 id="toc_16">Tools for working with data</h3>
+
+<ul>
+<li><a href="https://plot.ly">Plotly</a>: like a more robust Google Sheets; you can export interactive charts and embed them in a site, such as something you build with Google Sites</li>
+<li><a href="https://public.tableau.com">Tableau Public</a> data visualization software; Public is the free version. Requires a login and download</li>
+<li><a href="https://cartodb.com/">CartoDB</a>: very powerful web-based mapping software; can also embed maps into a web page</li>
+<li><a href="https://quartz.github.io/Chartbuilder/">Chartbuilder</a> from Quartz</li>
+</ul>
+
+<h3 id="toc_17">Learn to code!</h3>
+
+<ul>
+<li><a href="https://scratch.mit.edu/">Scratch</a>: a drag-and-drop language developed at MIT to teach children to code (i.e. if grade schoolers can do it, you can do it)</li>
+<li><a href="http://www.codecademy.com">Codecademy</a>: free introductory, interactive lessons. Especially try Javascript (useful in web development) or Python (useful in data analysis). Highly recommend it!</li>
+<li><a href="https://www.dataquest.io/learn">Data Quest</a>: another set of lessons to learn Python, specifically with data analysis and data science applications; only the first several lessons are free, but it gives you a good sense of what you can do with the language</li>
+<li><a href="http://www.processing.org">Processing</a>: a language developed to be accessible to newcomers and non-coders; often used for making art, music, and data visualizations, as it came out of work at Rhode Island School of Design. Also now has <a href="http://p5js.org/">a javascript version</a> for making stuff web-friendly, with an active community and a mission to diversify coding.</li>
+<li><a href="https://www.khanacademy.org/computing">Khan Academy</a> now has a computer science section, including coding in Processing and lessons on algorithms.</li>
+<li><a href="https://www.r-project.org/">R</a>: this is an open source language for statistical programming and data analysis. It&#39;s notoriously hard to get into, but really cool once you do; try this <a href="https://www.codeschool.com/courses/try-r">free introduction course</a></li>
+</ul>
+
+<h3 id="toc_18">Organizations diversifying STEM</h3>
+
+<ul>
+<li><a href="http://www.blackgirlscode.com/">Black Girls Code</a></li>
+<li><a href="http://girlswhocode.com/">Girls Who Code</a></li>
+<li><a href="http://www.code2040.org/">Code2040</a></li>
+<li><a href="http://www.yeswecode.org/">#YesWeCode</a></li>
+<li><a href="https://www.girldevelopit.com/">Girl Develop It</a></li>
+<li><a href="https://www.facebook.com/wogrammer/">Wogrammer</a></li>
+<li>Also check out the hashtag <a href="https://twitter.com/hashtag/ilooklikeanengineer">#ILookLikeAnEngineer</a>, which took off this past summer and is still going strong</li>
+</ul>
+
+
+</body>
+
+</html>
